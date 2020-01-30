@@ -1,0 +1,104 @@
+<!doctype htm>
+<html lang="en">
+    <head>
+        <!-- Required meta tag -->
+        <meta charset="utf-8">
+        <!-- allows site to scale depening on device/size-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel ="stylesheet" href="scripts/style.css">
+        <script src = "scripts/script.js"></script>
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>White Board</title>
+    </head>
+    <body>
+        <section class="overlay">
+            <header>
+                <img src = "images/whiteboard.svg" alt = "Whiteboard Logo" id="logo">
+            </header>
+            <hr>
+            <div class="topnav" id="myTopnav">
+				<a href="index.html">Home</a>
+                <a href="calendar.html">Calendar</a>
+                <a href="polls.html">Polls</a>
+                <a href="#group" class="active">Groups</a>
+                <a href="#settings"><img src = "images/settings.png" alt = "Settings Logo" id="settingsIcon" title="Settings"></a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <form id="search">
+                    <input type="search" placeholder="Search" aria-label="Search">
+                    <button  type="submit">Search</button>
+                </form>               
+            </div>
+			<hr>
+			<!--      Groups Page        -->
+			<div class="row">
+				<div class="leftcolumn">
+					<div id = "tilea">
+						<div id = "sidebar">
+							<p>Groups</p>
+							<p>Discussions</p>
+							<p>Members</p>
+							<p>Assignments</p>
+							<p>Announcements</p>
+							<p>Files</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="middlecolumn">
+					<div class="tile">						
+							<select style="margin-right:700px" class = "filter">
+								<option value="New">Newest</option>
+								<option value="Old">Oldest</option>
+								<option value="Saved">Saved</option>
+							</select>
+							
+						<div class ="discussions">
+
+								<h2>Compsci 345 Discussions</h2>
+								<div class="para">
+									<a href="url" style="background-color:#333;color:#333"><p>[Lecture]  Deadline handing in paper prototype be 8/5 at 4pm in CompSci Lab</p></span>
+									<a href="url" style="background-color:#333;color:#333"><p>[Assignment 2]  Will meet Compsci group on the 10/5</p></a>
+									<a href="url" style="background-color:#333;color:#333"><p>[Assignment 2]  Kathleen - Home Page</p></a>
+									<a href="url" style="background-color:#333;color:#333"><p>[Poll]  Will meet Compsci group on the 5/5 at 3pm in IC0</p></a>
+									<a href="url" style="background-color:#333;color:#333"><p>[Poll]  Badmitmon Exec meeting at 6pm</p></a>
+									<a href="url" style="background-color:#333;color:#333"><p>[Quiz]  LogiComp Meeting on 25/4Lunch together - YES</p></a>
+									<a href="url" style="background-color:#333;color:#333"><p>[Workbook]  Posters need to be done before 20/4</p></a>
+									<a href="url" style="background-color:#333;color:#333"><p>[Workbook]  Coaching session set to be on 21/5</p></a>
+									<a href="url" style="background-color:#333;color:#333"><p>[Assignment 1]  Coaching session proposal needed to be done before 18/4</p></a>
+								</div>
+							</div>
+					</div>
+				</div>
+
+				<div class = "rightcolumn">
+					<div class="tile">
+						<h2 style="padding-bottom: 20px;">Members</h2>
+						
+							<h4><img src = "images/danni.svg" class = "peopleIcon">Danni</h4>
+							<h5>Online</h5>
+			
+							<h4><img src = "images/jacob.svg" class = "peopleIcon">Aditya</h4>
+							<h5>Online</h5>
+
+							<h4><img src = "images/jeaa.svg" class = "peopleIcon">Jess Freedom</h4>
+							<h5>Online</h5>
+						
+							<h4><img src = "images/jacob.svg" class = "peopleIcon">Jacob Black</h4>
+							<h6>Offline</h6>
+
+							<h4><img src = "images/kathleen.svg" class = "peopleIcon">Kathleen </h4>
+							<h6>Offline</h6>
+						<p></p>
+					</div>
+				</div>	
+			</div>
+		<div id="footer">
+			<hr>
+			copyright &copy; 2019 COMPSCI345A2.
+		</div>   
+	</section>
+</body>
+</html>

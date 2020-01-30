@@ -1,0 +1,120 @@
+<!doctype htm>
+<html lang="en">
+    <head>
+        <!-- Required meta tag -->
+        <meta charset="utf-8">
+        <!-- allows site to scale depening on device/size-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel ="stylesheet" href="scripts/style.css">
+        <script src = "scripts/script.js"></script>
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>White Board</title>
+    </head>
+    <body>
+        <section class="overlay">
+            <header>
+                <img src = "images/whiteboard.svg" alt = "Whiteboard Logo" id="logo">
+            </header>
+            <hr>
+            <div class="topnav" id="myTopnav">
+				<a href="index.html">Home</a>
+                <a href="#calendar" class="active">Calendar</a>
+                <a href="polls.html">Polls</a>
+                <a href="groups.html" >Groups</a>
+                <a href="#settings"><img src = "images/settings.png" alt = "Settings Logo" id="settingsIcon" title="Settings"></a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <form id="search">
+                    <input type="search" placeholder="Search" aria-label="Search">
+                    <button  type="submit">Search</button>
+                </form>               
+            </div>
+            <hr>
+            <div class="month">      
+                <ul>
+                  <li class="prev">&#10094;</li>
+                  <li class="next">&#10095;</li>
+                  <li>
+                        February<br>
+                    <span style="font-size:18px">2017</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <ul class="weekdays">
+                <li>Mo</li>
+                <li>Tu</li>
+                <li>We</li>
+                <li>Th</li>
+                <li>Fr</li>
+                <li>Sa</li>
+                <li>Su</li>
+              </ul>
+              
+              <ul class="days">  
+                <li>1</li>
+                <li>2</li>
+                <li><span style = "color:blue;font-size:20px">&#183;</span>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li><span style = "color:blue;font-size:20px">&#183;</span><span id = "item" onclick="toggleActive()">10</span></li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li>15</li>
+                <li><span style = "color:blue;font-size:20px">&#183;</span>16</li>
+                <li>17</li>
+                <li>18</li>
+                <li>19</li>
+                <li><span style = "color:green;font-size:20px">&#183;</span>20</li>
+                <li>21</li>
+                <li>22</li>
+                <li>23</li>
+                <li>24</li>
+                <li>25</li>
+                <li><span style = "color:yellow;font-size:20px">&#183;</span>26</li>
+                <li>27</li>
+                <li>28</li>
+              </ul>
+                
+            <div id="footer">
+                <hr>
+                copyright &copy; 2019 COMPSCI345A2.
+            </div>
+    
+                <div class = "coursetitle" id = "this_course">
+                   <ul>
+                    <li> 
+                    COMPSCI 345
+                    </li>
+                 </ul>
+                </div>
+             
+             <ul class = "content" id = "this_content">
+                <li>
+                     <div style="font-size:14px;font-weight:bold">Assignment 2 Low and High Fidelity Prototyping</div>
+                     <div style="font-size:13px">Due Friday by 20:00  Points 10</div></br>
+                     <div style="font-size:13px">Submitting a file upload  File types pdf and zip Available until 10 Feb at 23:59</div></br>
+                     This assignment is to be completed in your same groups of 5 as Assignment 1.
+                    Choose a design feature subset of your system related to "task management", which could mean various functionality such as assigning tasks to group members, seeing progress on all tasks, or seeing how other group members are progressing on their own tasks, etc. Select a suitably large subset of funtionality for the tasks below. </span>
+                </li>
+            </ul>
+            <div class = "today" id = "day">
+                  <ul>
+                  <li> 
+                     You have assignment due on 10th Feb
+                  </li>
+                  </ul>
+                  <button class="button button1">Create a event</button>
+             </div>
+      
+        </section>
+    </body>
+</html>
